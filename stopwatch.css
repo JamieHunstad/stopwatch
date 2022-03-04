@@ -1,0 +1,78 @@
+:root {
+    --primary: #EA8F18;
+    --outline: #FFA943;
+    --font: #e5d4be;
+    --shadowLight: #ffab44;
+    --shadowDark: #E0760D;
+    --boxBgLight: #EF9B35;
+    --dark: #633e10;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica;
+}
+body{
+    background: var(--primary);
+    color: var(--font);
+}
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch{
+    text-align: center;
+}
+.time{
+    padding: 10px 40px;
+    border-radius: 100px;
+    outline: solid 1px var(--outline);
+    background: linear-gradient (to right, var(--primary), var(--boxBgLight));
+    box-shadow: -5px -5px 10px var(--shadowLight), 5px 5px 10px var(--shadowDark);
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.controls button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: var(--light);
+    outline: solid 1px var(--outline);
+    background: linear-gradient(to right, var(--primary), var(--boxBgLight));
+    box-shadow: -5px -5px 10px var(--shadowLight), 5px 5px 10px var(--shadowDark);
+    margin: 0 20px;
+    transition: 0.2s;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    font-size: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background: #e68c1e;
+}
+button:active{
+    background: #D37F1A;
+    transition: 0s;
+}
+#title{
+    margin-top: 40px;
+    opacity: .6;
+    font-family: DIN Condensed;
+    font-size: 16px;
+}
